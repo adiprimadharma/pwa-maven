@@ -702,3 +702,122 @@ body, html {
 #section-08 {
 	background-image: url("../img/4x/section08.png");
 }
+
+
+@media screen and (max-width: 768px) {
+
+	.maven-logo {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.fp-viewing-section-08 .maven-logo, 
+	.fp-viewing-section-07 .maven-logo, 
+	.fp-viewing-section-06 .maven-logo, 
+	.fp-viewing-section-05 .maven-logo,
+	.fp-viewing-section-04 .maven-logo, 
+	.fp-viewing-section-03 .maven-logo, 
+	.fp-viewing-section-02 .maven-logo {
+		display: none;
+	}
+
+	html, body {
+		font-size: 7px;
+	}
+
+	/* ==================== Section 01 MOBILE ======================== */
+	#section-01 .img-01 {
+		width: 85%;
+		height: 85%;
+		flex: 0 0 auto;
+		left: -40px;
+	}
+
+	#section-01 .text-01 {
+		right: -51px;
+		width: auto;
+		height: auto;
+		font-size: 2.8rem;
+	}
+
+	#section-01 .section-wrapper {
+		bottom: 64px;
+	}
+
+	/* ==================== Section 02 MOBILE ======================== */
+
+	#section-02 {
+		background-image: url("../img/mobile/section02.png");
+	}
+
+	#section-02 .text-container {
+		bottom: 14vh;
+	}
+
+	h1.text-02 {
+		letter-spacing: 0.3rem;
+		font-weight: bold;
+		line-height: 5.2rem;
+		font-size: 4.5rem;
+	}
+
+	h4.text-02 {
+		margin-top: 24px;
+	}
+
+	/* ==================== Section 03 MOBILE ======================== */
+
+	#section-03 {
+		background-image: url("../img/mobile/section03.png");
+	}
+
+	#section-03 .section-wrapper {
+		width: 254px;
+		bottom: 11vh;
+		left: 2%;
+	}
+
+	h4.text-03 {
+		margin-top: 8px;
+	}
+
+	h1.text-03 {
+		font-size: 4rem;
+		line-height: 4rem;
+	}
+
+	/* ==================== Section 04 MOBILE ======================== */
+
+	#section-04 {
+		background-image: url("../img/mobile/section04.png");
+	}
+
+	/* ==================== Section 05 MOBILE ======================== */
+
+	#section-05 {
+		background-image: url("../img/mobile/section05.png");
+	}
+
+	#section-05 .section-wrapper {
+		width: 287px;
+	}
+
+	/* ==================== Section 06 MOBILE ======================== */
+
+	#section-06 {
+		background-image: url("../img/mobile/section06.png");
+	}
+
+	/* ==================== Section 07 MOBILE ======================== */
+
+	#section-07 {
+		background-image: url("../img/mobile/section07.png");
+	}
+
+	/* ==================== Section 08 MOBILE ======================== */
+
+	#section-08 {
+		background-image: url("../img/mobile/section08.png");
+	}
+	
+}
