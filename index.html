@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Maven</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/main.css" />
+</head>
+<body>
+        <div class="loading-screen" id="svg-loading">
+            <svg viewBox="0 0 132.32 20"><defs><style>.cls-1{fill:white;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_3" stroke="#ffefef" stroke-width="1" data-name="Layer 3"><path class="cls-1" d="M74.37,2.08a7.92,7.92,0,1,0,3.9,14.8v.55a.49.49,0,0,0,.49.49h3a.49.49,0,0,0,.49-.49V10A7.94,7.94,0,0,0,74.37,2.08ZM78.27,10a3.9,3.9,0,1,1-3.9-3.9A3.91,3.91,0,0,1,78.27,10Z"/><path class="cls-1" d="M124.4,2.08A7.93,7.93,0,0,0,116.49,10v7.43a.48.48,0,0,0,.48.49h3a.48.48,0,0,0,.48-.49V10a3.9,3.9,0,0,1,7.8,0v7.43a.49.49,0,0,0,.49.49h3a.49.49,0,0,0,.49-.49V10A7.93,7.93,0,0,0,124.4,2.08Z"/><path class="cls-1" d="M58.12,2.08a6.38,6.38,0,0,0-4.43,1.78,6.37,6.37,0,0,0-4.43-1.78,6.45,6.45,0,0,0-6.44,6.44v8.91a.49.49,0,0,0,.49.49h3a.49.49,0,0,0,.49-.49V8.52a2.43,2.43,0,0,1,4.85,0v8.91a.48.48,0,0,0,.48.49h3a.49.49,0,0,0,.48-.49V8.52a2.43,2.43,0,0,1,4.85,0v8.91a.48.48,0,0,0,.48.49h3a.49.49,0,0,0,.48-.49V8.52A6.45,6.45,0,0,0,58.12,2.08Z"/><path class="cls-1" d="M98.21,2.29a.49.49,0,0,0-.4-.21H94.56a.51.51,0,0,0-.46.32L90.52,12,86.94,2.4a.48.48,0,0,0-.45-.32H83.23a.49.49,0,0,0-.45.66L88.29,17.6a.48.48,0,0,0,.45.32H92.3a.49.49,0,0,0,.46-.32L98.27,2.74A.51.51,0,0,0,98.21,2.29Z"/><path class="cls-1" d="M106.68,2.08a7.92,7.92,0,0,0,0,15.84h3.37a.48.48,0,0,0,.48-.49v-3a.48.48,0,0,0-.48-.48h-3.37A3.88,3.88,0,0,1,103.34,12h10.77a.49.49,0,0,0,.49-.49V10A7.94,7.94,0,0,0,106.68,2.08ZM103.34,8A3.9,3.9,0,0,1,110,8Z"/><path class="cls-1" d="M25.05,0a4.8,4.8,0,0,0-3.11,1.13h0L16.28,5.89a.33.33,0,0,0-.12.24.33.33,0,0,0,.12.25L19.34,9a.33.33,0,0,0,.42,0l3.65-3.06a1.16,1.16,0,0,1,1.91.9v6.42a1.17,1.17,0,0,1-1.17,1.16,1.33,1.33,0,0,1-.44-.08.53.53,0,0,1-.21-.11L8,1.14H8A4.85,4.85,0,0,0,0,4.85v10.3a4.85,4.85,0,0,0,8,3.72H8l5.67-4.76a.33.33,0,0,0,.12-.24.33.33,0,0,0-.12-.25l-3.06-2.57a.33.33,0,0,0-.42,0L6.49,14.11a1.16,1.16,0,0,1-1.91-.9V6.79A1.17,1.17,0,0,1,5.75,5.63a1.33,1.33,0,0,1,.44.08.61.61,0,0,1,.21.11L22,18.86h0a4.85,4.85,0,0,0,8-3.72V4.85A4.85,4.85,0,0,0,25.05,0Z"/></g></g></svg>
+        </div>
+<div id="main" class="main-container" style="display: none;">
+        <svg class="maven-logo" viewBox="0 0 132.32 20"><g id="Layer_2" data-name="Layer 2"><g id="Layer_3" data-name="Layer 3"><path class="cls-1" d="M74.37,2.08a7.92,7.92,0,1,0,3.9,14.8v.55a.49.49,0,0,0,.49.49h3a.49.49,0,0,0,.49-.49V10A7.94,7.94,0,0,0,74.37,2.08ZM78.27,10a3.9,3.9,0,1,1-3.9-3.9A3.91,3.91,0,0,1,78.27,10Z"/><path class="cls-1" d="M124.4,2.08A7.93,7.93,0,0,0,116.49,10v7.43a.48.48,0,0,0,.48.49h3a.48.48,0,0,0,.48-.49V10a3.9,3.9,0,0,1,7.8,0v7.43a.49.49,0,0,0,.49.49h3a.49.49,0,0,0,.49-.49V10A7.93,7.93,0,0,0,124.4,2.08Z"/><path class="cls-1" d="M58.12,2.08a6.38,6.38,0,0,0-4.43,1.78,6.37,6.37,0,0,0-4.43-1.78,6.45,6.45,0,0,0-6.44,6.44v8.91a.49.49,0,0,0,.49.49h3a.49.49,0,0,0,.49-.49V8.52a2.43,2.43,0,0,1,4.85,0v8.91a.48.48,0,0,0,.48.49h3a.49.49,0,0,0,.48-.49V8.52a2.43,2.43,0,0,1,4.85,0v8.91a.48.48,0,0,0,.48.49h3a.49.49,0,0,0,.48-.49V8.52A6.45,6.45,0,0,0,58.12,2.08Z"/><path class="cls-1" d="M98.21,2.29a.49.49,0,0,0-.4-.21H94.56a.51.51,0,0,0-.46.32L90.52,12,86.94,2.4a.48.48,0,0,0-.45-.32H83.23a.49.49,0,0,0-.45.66L88.29,17.6a.48.48,0,0,0,.45.32H92.3a.49.49,0,0,0,.46-.32L98.27,2.74A.51.51,0,0,0,98.21,2.29Z"/><path class="cls-1" d="M106.68,2.08a7.92,7.92,0,0,0,0,15.84h3.37a.48.48,0,0,0,.48-.49v-3a.48.48,0,0,0-.48-.48h-3.37A3.88,3.88,0,0,1,103.34,12h10.77a.49.49,0,0,0,.49-.49V10A7.94,7.94,0,0,0,106.68,2.08ZM103.34,8A3.9,3.9,0,0,1,110,8Z"/><path class="cls-1" d="M25.05,0a4.8,4.8,0,0,0-3.11,1.13h0L16.28,5.89a.33.33,0,0,0-.12.24.33.33,0,0,0,.12.25L19.34,9a.33.33,0,0,0,.42,0l3.65-3.06a1.16,1.16,0,0,1,1.91.9v6.42a1.17,1.17,0,0,1-1.17,1.16,1.33,1.33,0,0,1-.44-.08.53.53,0,0,1-.21-.11L8,1.14H8A4.85,4.85,0,0,0,0,4.85v10.3a4.85,4.85,0,0,0,8,3.72H8l5.67-4.76a.33.33,0,0,0,.12-.24.33.33,0,0,0-.12-.25l-3.06-2.57a.33.33,0,0,0-.42,0L6.49,14.11a1.16,1.16,0,0,1-1.91-.9V6.79A1.17,1.17,0,0,1,5.75,5.63a1.33,1.33,0,0,1,.44.08.61.61,0,0,1,.21.11L22,18.86h0a4.85,4.85,0,0,0,8-3.72V4.85A4.85,4.85,0,0,0,25.05,0Z"/></g></g></svg>
+        <div class="section fp-auto-height-responsive" id="section-01">
+            <div class="section-wrapper">
+                    <h1 class="text-01">Our New Service</h1>
+                    <img class="img-01" src="./assets/img/SVG/asset-section01.svg" alt="img-01">
+            </div>
+        </div>
+        <div class="section fp-auto-height-responsive" id="section-02">
+            <div class="section-wrapper">
+                <div class="text-container">
+                    <h1 class="text-02">Website</h1>
+                    <h1 class="text-02 type-2">For Your</h1>
+                    <h1 class="text-02">Business</h1>
+                    <h4 class="text-02">Unlike 90% of Website in Asia</h4>
+                </div>
+                <!-- <img class="img-02" src="./assets/img/SVG/asset-section02.svg" alt="img-02"> -->
+            </div>
+        </div>
+        <div class="section" id="section-03">
+            <div class="section-wrapper">
+                <h1 class="text-03">First Ever</h1>
+                <h1 class="text-03 type-2">Progressive</h1>
+                <h1 class="text-03 type-2">Web Apps</h1>
+                <h4 class="text-03">Based-company profile services. We are the first agency of it’s kind to provide specific services on Company Profile Websites based on PWA technology. See below for why PWA.</h4>
+                <!-- <img src="./assets/img/SVG/asset-section03.svg" alt="img-03"> -->
+            </div>
+        </div>
+        <div class="section" id="section-04">
+            <div class="section-wrapper">
+                <div class="text-container-left">
+                    <h1 class="text-04">What is</h1>
+                    <h1 class="text-04 type-2">PWA</h1>
+                    <h1 class="text-04 type-2">Magic</h1>
+                    <h4 class="text-04">PWA or Progressive Web Application is a website that uses the latest modern web technology to deliver and “app-like” experience to your customers. In short, it’s the web, but better ( bold )</h4>
+                </div>
+                <div class="text-container-right">
+                    <ul class="text-04">
+                        <li class="text-04">App Like Experience <span class="text-04">Your website will most likely be accessed through a mobile device, make sure it looks the best on it. Better yet, your customers can download it.</span></li>
+                        <li class="text-04">Fast & Reliable <span class="text-04">You can only expect the best from the latest technology that we use, customer will load your site faster. Say goodbye to downasaurs.</span></li>
+                        <li class="text-04">Marketing & Engagement <span class="text-04">Get new customers and users, for companies with content engagement, blogs. All will be pushed like a notification to customers.</span></li>
+                    </ul>
+                </div>
+                <img class="img-04" src="./assets/img/SVG/asset-section04.png" alt="img-04">
+            </div>
+        </div>
+        <div class="section" id="section-05">
+            <div class="section-wrapper">
+                <h1 class="text-05 type-2">We Guarantee</h1>
+                <h1 class="text-05">10.000 Visitors</h1>
+                <h1 class="text-05 type-2">In 3 months</h1>
+                <h4 class="text-05">After your website launched. Provided you followed our proven strategy on the website design, content, and development. We will manage the initial marketing and ads for your website and report to you monthly. Free for the first 10.000 Visitors</h4>
+                <!-- <img src="./assets/img/SVG/asset-section05-1.svg" alt="img-05-1">
+                <img src="./assets/img/SVG/asset-section05-2.svg" alt="img-05-2"> -->
+            </div>
+        </div>
+        <div class="section" id="section-06">
+            <div class="section-wrapper">
+                    <h1 class="text-06">Don't</h1>
+                    <h1 class="text-06">Wait</h1>
+                    <h1 class="text-06 type-2">Months</h1>
+                    <h4 class="text-06">We are experts at creating a website that sells,  have your website live in weeks. No unnecessary waiting to create new customers for you. All timelines are discussed in initial meeting and may change due to internal – client process and relationship.</h4>
+                <!-- <img src="./assets/img/SVG/asset-section06.svg" alt="img-06"> -->
+            </div>
+        </div>
+        <div class="section" id="section-07">
+            <div class="section-wrapper">
+                <h1 class="text-07">Why Us</h1>
+                <div class="text-07 one">
+                    <h4 class="text-07">Reliable</h4>
+                    <h5 class="text-07">Load instantly and never show the downasaur, even in uncertain network conditions.</h5>
+                </div>
+                <div class="text-07 two">
+                    <h4 class="text-07">Innovative</h4>
+                    <h5 class="text-07">Bring up the new dimension in reaching your customer by providing a new experience</h5>
+                </div>
+                <div class="text-07 three">
+                    <h4 class="text-07">Communicative</h4>
+                    <h5 class="text-07">What you want vs what your customer need, it is going to be inline with us</h5>
+                </div>
+                <div class="text-07 four">
+                    <h4 class="text-07">Product Leadership</h4>
+                    <h5 class="text-07">Reach new capability of features that can be your knight with a white horse in the industry</h5>
+                </div>
+                <div class="text-07 five">
+                    <h4 class="text-07">Save You Money & Time</h4>
+                    <h5 class="text-07">Agile development with a team professional will saved you more time and money, you get the best deal here</h5>
+                </div>
+                <div class="text-07 six">
+                    <h4 class="text-07">Support Team</h4>
+                    <h5 class="text-07">Also come with a support team that can help you any time</h5>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section-08">
+            <div class="section-wrapper">
+                <h1 class="text-08">Contact Us</h1>
+                <h4 class="text-08">PT Maven Digital Asia</h4>
+
+                <h5 class="text-08"><i>Telp</i> : (021) 565 1189</h5>
+                <h5 class="text-08"><i>Email</i> : hi@maven.co.id</h5>
+                        
+                <h5 class="text-08">Jl. Ratu Teratai Blok C1 No.35, RT.12/RW.13,</h5>
+                <h5 class="text-08">Duri Kepa, Kb. Jeruk, Jakarta Barat 11520</h5>
+                <!-- <img src="./assets/img/SVG/asset-section08.svg" alt="img-08"> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/jquery-parallax.min.js"></script>
+<script src="./assets/js/parallax.min.js"></script>
+<script src="./assets/js/swup.min.js"></script>
+<script src="./assets/js/full-page-scroll.js"></script>
+<script src="./assets/js/fullpage.min.js"></script>
+<script src="./assets/js/anime.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</html>
