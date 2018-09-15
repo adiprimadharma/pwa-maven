@@ -43,6 +43,7 @@ html.is-changing .loading{
     top: 50px;
     left: 50px;
 	z-index: 100;
+	transition: all ease-in .7s;
 }
 
 .maven-logo .cls-1 {
@@ -54,12 +55,18 @@ html.is-changing .loading{
 	fill: #363795;
 }
 
+.fp-viewing-section-08 .maven-logo {
+	left: calc(100% - 200px);
+}
+
 .section-wrapper {
 	display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
+
+/* ==================================== SECTION 1 ===================================== */
 
 .section1 {
     background-color: #7DBCD4;
@@ -85,6 +92,8 @@ html.is-changing .loading{
     left: -50px;
 }
 
+/* ==================================== SECTION 2 ===================================== */
+
 .section2 {
     background-color: #98C19F; 
 }
@@ -100,16 +109,18 @@ html.is-changing .loading{
 #section-02 .text-container {
     position: absolute;
 	right: 20%;
-    bottom: 160px;
+    bottom: 56px;
 }
 
 h1.text-02 {
-	font-size: 4.5rem;
-	color: #363795;
+	font-size: 5.5rem;
+    color: #363795;
     font-family: DIN;
     margin: 4px 0px;
-	font-weight: 100;
-	line-height: 5rem;
+    font-weight: 100;
+    line-height: 6.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
 }
 
 h1.text-02.type-2 {
@@ -117,10 +128,13 @@ h1.text-02.type-2 {
 }
 
 h4.text-02 {
-	font-size: 1.7rem;
+	font-size: 2.2rem;
     color: #6f70c7;
     font-weight: 100;
+    margin-top: 48px;
 }
+
+/* ==================================== SECTION 3 ===================================== */
 
 .section3 {
     background-color:  #A199E2;
@@ -132,21 +146,24 @@ h4.text-02 {
     text-align: right;
     align-items: flex-end;
     position: absolute;
-    top: 140px;
-    left: 7%;
+    bottom: 140px;
+    left: 10%;
 }
 
 h1.text-03 {
 	font-size: 4.5rem;
-	color: #2D2E82;
-    font-family: DIN;
+    color: #2D2E82;
+    font-family: DIN-Bold;
     margin: 4px 0px;
-	font-weight: 100;
-	line-height: 5rem;
+    font-weight: 100;
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
 }
 
 h1.text-03.type-2 {
 	color: #1D70B7;
+	font-family: DIN-RegAlt;
 }
 
 h4.text-03 {
@@ -154,7 +171,10 @@ h4.text-03 {
     color: #3C3C3B;
     font-weight: 100;
     line-height: 2em;
+    margin-top: 48px;
 }
+
+/* ==================================== SECTION 4 ===================================== */
 
 .section4 {
     background-color:  #CC938E;
@@ -211,8 +231,8 @@ h4.text-04 {
 #section-04 .text-container-right {
 	position: absolute;
     right: 34%;
-    transform: translateX(100%);
-    top: 200px;
+    transform: translate(100%, 5%);
+	top: 12.5vh;
 }
 
 li.text-04 {
@@ -226,16 +246,16 @@ li.text-04 {
 }
 
 li.text-04:nth-child(2) {
-	top: 52px;
+	top: 4vh;
 }
 
 li.text-04:nth-child(3) {
-	top: 124px;
+	top: 10vh;
 	left: -110px;
 }
 
 li.text-04:before {
-	content: "";
+	/* content: ""; */
     display: block;
     width: 40px;
     height: 1.5px;
@@ -251,6 +271,8 @@ span.text-04 {
 	margin-top: 10px;
 	line-height: 2.6rem;
 }
+
+/* ==================================== SECTION 5 ===================================== */
 
 .section5 {
     background-color:  #D2C598;
@@ -284,46 +306,229 @@ h1.text-05 {
 
 h4.text-05 {
 	color: #3C3C3B;
-	font-size: 1.4rem;
-    line-height: 2.6rem;
+	font-size: 1.7rem;
+    line-height: 3rem;
 	margin-top: 40px;
 	font-family: DIN-RegAlt;
 }
 
+/* ==================================== SECTION 6 ===================================== */
+
+#section-06 .section-wrapper {
+	flex-direction: column;
+    width: 400px;
+    left: 10%;
+    text-align: right;
+    align-items: flex-end;
+	top: 16px;
+}
+
 h1.text-06.type-2 {
 	color: #FFFFFF;
+	font-family: DIN-RegAlt;
 }
 
 h1.text-06 {
 	color: #FFEC00;
+	font-size: 5rem;
+	font-family: DIN-Bold;
+	margin: 4px 0;
+    font-weight: 100;
+    line-height: 6.4rem;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
 }
 
 h4.text-06 {
-	color: #FFFFFF;
+	color: #ffffff;
+    font-size: 1.7rem;
+    font-family: DIN-RegAlt;
+    width: 400px;
+    text-align: right;
+    margin-top: 34px;
+    line-height: 3.4rem;
+    font-weight: 100;
+}
+
+/* ==================================== SECTION 7 ===================================== */
+
+#section-07 .section-wrapper {
+	height: 100%;
 }
 
 h1.text-07 {
 	color: #FFEC00;
+	font-size: 5rem;
+	font-family: DIN-Bold;
+	margin: 4px 0;
+    font-weight: 100;
+	line-height: 6.4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.4rem;
+	position: absolute;
+	top: 11vw;
+    left: 10%;
+    width: 125px;
+    text-align: right;
+}
+
+div.text-07 {
+	position: absolute;
+    text-align: left;
+    width: 278px;
+}
+
+div.text-07 h4.text-07:before {
+    display: block;
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.8rem;
+    left: -64px;
+    top: -32px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    padding: 13px 8px;
+    padding-top: 22px;
+    padding-bottom: 6px;
+    font-family: DIN-RegAlt;
+    font-weight: 100;
+    height: 5px;
+}
+
+div.text-07.one h4.text-07:before {
+	content: "01";
+}
+
+div.text-07.two h4.text-07:before {
+	content: "02";
+}
+
+div.text-07.three h4.text-07:before {
+	content: "03";
+}
+
+div.text-07.four h4.text-07:before {
+	content: "04";
+}
+
+div.text-07.five h4.text-07:before {
+	content: "05";
+	line-height: 0;
+    top: -6px;
+}
+
+div.text-07.six h4.text-07:before {
+	content: "06";
+}
+
+div.text-07.one {
+	left: 12%;
+	top: 22.6vw;
+}
+
+div.text-07.two {
+	left: 42.5%;
+    top: 22.6vw;
+}
+
+div.text-07.three {
+	left: 72%;
+	top: 22.6vw;
+}
+
+div.text-07.four {
+	left: 12%;
+    top: 34.9vw;
+}
+
+div.text-07.four h4.text-07 {
+	width: 300px;
+}
+
+div.text-07.five {
+	left: 42.5%;
+    top: 36.2vw;
+}
+
+div.text-07.five h4.text-07 {
+	line-height: 4.2rem;
+    margin: 0;
+}
+
+div.text-07.five h5.text-07 {
+	margin-top: 8px;
+}
+
+div.text-07.six {
+	left: 72%;
+    top: 34.9vw;
 }
 
 h4.text-07 {
 	color: #FFFFFF;
+	font-size: 3.4rem;
+	font-family: DIN-RegAlt;
+	margin-bottom: 28px;
+	font-weight: 100;
+	position: relative;
 }
 
 h5.text-07 {
 	color: #FFFFFF;
+    font-size: 1.6rem;
+    font-family: DIN-RegAlt;
+    line-height: 2.4rem;
+    font-weight: 100;
+}
+
+/* ==================================== SECTION 8 ===================================== */
+
+#section-08 .text-container {
+	text-align: right;
+    left: 46%;
+    position: absolute;
 }
 
 h1.text-08 {
 	color: #FFEC00;
+    font-size: 4.4rem;
+    font-family: DIN-Bold;
+    margin: 4px 0;
+    font-weight: 100;
+    line-height: 6.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    position: absolute;
+    bottom: 210px;
+    left: 10%;
+    width: 222px;
+    text-align: right;
 }
 
 h4.text-08 {
 	color: #FFFFFF;
+    font-size: 3rem;
+    font-family: DIN-RegAlt;
+    margin-bottom: 28px;
+    font-weight: bold;
+	letter-spacing: 0.4rem;
+	line-height: 6rem;
+	margin-top: 18px;
 }
 
 h5.text-08 {
 	color: #FFFFFF;
+	font-size: 1.8rem;
+	font-family: DIN-RegAlt;
+	margin-bottom: 28px;
+	font-weight: 100;
+	position: relative;
+	line-height: 1.2rem;
+}
+
+h5.text-08:nth-child(2) {
+	margin-bottom: 54px;
 }
         
 section div {
@@ -491,7 +696,7 @@ body, html {
 
 #section-07 {
 	background-image: url("../img/4x/section07.png");
-	background-position: left;
+	background-position: top;
 }
 
 #section-08 {
