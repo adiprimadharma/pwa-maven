@@ -10,7 +10,7 @@ var myFullpage = new fullpage('#main', {
 	menu: '#nav',
 	lockAnchors: true,
 	anchors:['section-01', 'section-02', 'section-03', 'section-04', 'section-05', 'section-06', 'section-07', 'section-08'],
-	navigation: true,
+	navigation: false,
 	navigationPosition: 'right',
 	navigationTooltips: ['01', '02', '03', '04', '05', '06', '07', '08'],
 	showActiveTooltip: true,

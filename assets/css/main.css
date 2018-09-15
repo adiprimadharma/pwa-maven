@@ -800,6 +800,7 @@ body, html {
 
 	#section-05 .section-wrapper {
 		width: 287px;
+		top: 38vh;
 	}
 
 	/* ==================== Section 06 MOBILE ======================== */
@@ -808,10 +809,86 @@ body, html {
 		background-image: url("../img/mobile/section06.png");
 	}
 
+	#section-06 .section-wrapper {
+		width: 178px;
+		top: auto;
+		bottom: 18vh;
+		left: 42%;
+	}
+
+	h1.text-06 {
+		font-size: 4rem;
+		line-height: 4.2rem;
+	}
+
+	h4.text-06 {
+		width: 226px;
+		font-size: 1.6rem;
+		line-height: 3rem;
+	}
+
 	/* ==================== Section 07 MOBILE ======================== */
 
 	#section-07 {
 		background-image: url("../img/mobile/section07.png");
+	}
+
+	h1.text-07 {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+
+	h4.text-07 {
+		font-size: 2.7rem;
+		margin-bottom: 8px;
+
+	}
+
+	h5.text-07 {
+		margin-top: 16px;
+	}
+
+	div.text-07 {
+		width: 225px;
+	}
+
+	div.text-07 h4.text-07:before {
+		left: -44px;
+		top: -18px;
+		padding: 16px 6px 2px;
+	}
+
+	div.text-07.one,
+	div.text-07.two,
+	div.text-07.three,
+	div.text-07.four,
+	div.text-07.five,
+	div.text-07.six {
+		left: 24%;
+	}
+
+	div.text-07.one {
+		top: 30vw;
+	}
+
+	div.text-07.two {
+		top: 53vw;
+	}
+
+	div.text-07.three {
+		top: 73vw;
+	}
+
+	div.text-07.four {
+		top: 94vw;
+	}
+
+	div.text-07.five {
+		top: 118vw;
+	}
+
+	div.text-07.six {
+		top: 142vw;
 	}
 
 	/* ==================== Section 08 MOBILE ======================== */
@@ -819,5 +896,28 @@ body, html {
 	#section-08 {
 		background-image: url("../img/mobile/section08.png");
 	}
-	
+
+	#section-08 .text-container {
+		left: 50%;
+		transform: translateX(-50%);
+		width: 262px;
+	}
+
+	h1.text-08 {
+		width: 158px;
+		bottom: 28vh;
+	}
+
+	h5.text-08:nth-child(2) {
+		margin-bottom: 0;
+	}
+
+	h5.text-08:nth-child(4) {
+		margin-top: 44px;
+	}
+
+	h5.text-08 {
+		margin-bottom: 16px;
+		line-height: 0.5rem;
+	}
 }
