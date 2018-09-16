@@ -1,9 +1,3 @@
-// var swup = new Swup()
-
-// new fullScroll({displayDots: true,
-//     dotsPosition: 'left',
-//     animateTime: 0.7,
-//     animateFunction: 'ease'});
 var anchorsArray = [];
 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || document.documentElement.clientWidth < 578 ) {
@@ -14,7 +8,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	$("#section-04b").removeClass("section").hide();
 	$("#section-04 .text-container-right").show();
 	anchorsArray = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'];
-}
+};
 
 var myFullpage = new fullpage('#main', {
 	//Navigation
@@ -127,17 +121,3 @@ var lineArrow = anime({
 	direction: 'alternate',
 	loop: true
 });
-
-// var options = {
-//     animations: {
-//         '*': {
-//             out: function (next) {
-//                 next()
-//             },
-//             in: function (next) {
-//                 next()
-//             }
-//         }
-//     }
-// }
-// var swupjs = new Swupjs(options)
