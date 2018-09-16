@@ -4,12 +4,23 @@
 //     dotsPosition: 'left',
 //     animateTime: 0.7,
 //     animateFunction: 'ease'});
+var anchorsArray = [];
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || document.documentElement.clientWidth < 578 ) {
+	$("#section-04b").addClass("section").show();
+	$("#section-04 .text-container-right").hide();
+	anchorsArray = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
+}else {
+	$("#section-04b").removeClass("section").hide();
+	$("#section-04 .text-container-right").show();
+	anchorsArray = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'];
+}
 
 var myFullpage = new fullpage('#main', {
 	//Navigation
 	menu: '#nav',
-	lockAnchors: true,
-	anchors:['section-01', 'section-02', 'section-03', 'section-04', 'section-05', 'section-06', 'section-07', 'section-08'],
+	lockAnchors: false,
+	anchors: anchorsArray,
 	navigation: false,
 	navigationPosition: 'right',
 	navigationTooltips: ['01', '02', '03', '04', '05', '06', '07', '08'],
@@ -70,8 +81,10 @@ var myFullpage = new fullpage('#main', {
 	lazyLoading: true,
 
 	//events
-	onLeave: function(origin, destination, direction){},
-	afterLoad: function(origin, destination, direction){},
+	onLeave: function(origin, destination, direction){
+	},
+	afterLoad: function(origin, destination, direction){
+	},
 	afterRender: function(){
         setTimeout(() => {
             $("#svg-loading").fadeOut();
@@ -94,6 +107,26 @@ var lineDrawing = anime({
     direction: 'alternate',
     loop: true
   });
+
+var lineArrow = anime({
+	targets: '.arrow-section-01',
+	bottom: "10%",
+	easing: 'easeInOutSine',
+	duration: 1500,
+	delay: function(el, i) { return i * 250 },
+	direction: 'alternate',
+	loop: true
+});
+
+var lineArrow = anime({
+	targets: 'h5.text-01',
+	bottom: 32,
+	easing: 'easeInOutSine',
+	duration: 1500,
+	delay: function(el, i) { return i * 250 },
+	direction: 'alternate',
+	loop: true
+});
 
 // var options = {
 //     animations: {

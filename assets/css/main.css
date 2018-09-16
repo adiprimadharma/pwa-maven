@@ -51,11 +51,11 @@ html.is-changing .loading{
 	transition: all ease-in .7s;
 }
 
-.fp-viewing-section-02 .maven-logo .cls-1, .fp-viewing-section-03 .maven-logo .cls-1 {
+.fp-viewing-two .maven-logo .cls-1, .fp-viewing-three .maven-logo .cls-1 {
 	fill: #363795;
 }
 
-.fp-viewing-section-08 .maven-logo {
+.fp-viewing-eight .maven-logo {
 	left: calc(100% - 200px);
 }
 
@@ -72,7 +72,7 @@ html.is-changing .loading{
     background-color: #7DBCD4;
 }
 
-.text-01 {
+h1.text-01 {
 	width: 212px;
     height: 171px;
     position: relative;
@@ -83,6 +83,48 @@ html.is-changing .loading{
     text-align: right;
 	font-size: 4.5rem;
 	font-weight: lighter;
+}
+
+.arrow-section-01 {
+	width: 25px;
+    position: fixed;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.arrow-section-01 .a {
+	fill: none;
+}
+.arrow-section-01 .a, .arrow-section-01 .b {
+	stroke: #ffffff;
+	stroke-miterlimit: 10;
+}
+.arrow-section-01 .b {
+	fill: none;
+}
+
+.arrow-container {
+	position: absolute;
+    left: 50%;
+    bottom: 8vh;
+}
+
+h5.text-01 {
+	color: #FFEC00;
+    position: relative;
+    bottom: 48px;
+    font-size: 2rem;
+    font-family: DIN-RegAlt;
+    font-weight: 100;
+    right: 48%;
+}
+
+.arrow-container:after {
+	content: "";
+	display: block;
+	height: 10vh;
+	position: absolute;
+	border-left: 1px dashed #ffffff;
 }
 
 .img-01 {
@@ -284,7 +326,8 @@ span.text-04 {
     text-align: left;
     align-items: flex-start;
     position: absolute;
-    right: 10%;
+	transform: translateX(-50%);
+	left: 77%;
     top: 200px;
 }
 
@@ -662,7 +705,7 @@ body, html {
 
 /* section */
 
-#section-01, #section-02, #section-03, #section-04, #section-05, #section-06, #section-07, #section-08 {
+#section-01, #section-02, #section-03, #section-04, #section-04b, #section-05, #section-06, #section-07, #section-08 {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-size: cover;
@@ -704,20 +747,14 @@ body, html {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
 	.maven-logo {
 		left: 50%;
 		transform: translateX(-50%);
 	}
 
-	.fp-viewing-section-08 .maven-logo, 
-	.fp-viewing-section-07 .maven-logo, 
-	.fp-viewing-section-06 .maven-logo, 
-	.fp-viewing-section-05 .maven-logo,
-	.fp-viewing-section-04 .maven-logo, 
-	.fp-viewing-section-03 .maven-logo, 
-	.fp-viewing-section-02 .maven-logo {
+	body:not(.fp-viewing-one) .maven-logo {
 		display: none;
 	}
 
@@ -733,7 +770,7 @@ body, html {
 		left: -40px;
 	}
 
-	#section-01 .text-01 {
+	#section-01 h1.text-01 {
 		right: -51px;
 		width: auto;
 		height: auto;
@@ -741,8 +778,19 @@ body, html {
 	}
 
 	#section-01 .section-wrapper {
-		bottom: 64px;
+		bottom: 40px;
 	}
+
+	/* #section-01 .section-wrapper:before {
+		content: "";
+		display: block;
+		width: 7vw;
+		height: 7vw;
+		max-width: 28px;
+		max-height: 28px;
+		position: absolute;
+		background-image: url("../img/SVG/arrow.svg");
+	} */
 
 	/* ==================== Section 02 MOBILE ======================== */
 
@@ -792,6 +840,94 @@ body, html {
 		background-image: url("../img/mobile/section04.png");
 	}
 
+	#section-04 .text-container-left {
+		top: 7vh;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 300px;
+	}
+
+	h1.text-04 {
+		line-height: 5.4rem;
+	}
+
+	h4.text-04 {
+		width: 254px;
+		margin-top: 16px;
+		line-height: 3rem;
+		float: right;
+	}
+
+	/* ==================== Section 04b MOBILE ======================== */
+
+	#section-04b {
+		/* background-image: url("../img/mobile/section04-b.png"); */
+		background-size: 100% 100%;
+	}
+
+	#section-04b .text-container-right {
+		top: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+	}
+
+	h1.text-04 {
+		line-height: 5.4rem;
+	}
+
+	h4.text-04 {
+		width: 254px;
+		margin-top: 16px;
+		line-height: 3rem;
+	}
+
+	li.text-04:nth-child(2):after {
+		content: "";
+		background-image: url("../img/SVG/asset04b.svg");
+		background-color: transparent;
+		width: 100vw;
+		background-size: contain;
+		background-position: center;
+		top: 50%;
+		position: absolute;
+		left: -53%;
+		height: 100vh;
+		display: block;
+		background-repeat: no-repeat;
+		transform: translate(-0%, -48.6%);
+		z-index: -1;
+	}
+
+	li.text-04 {
+		font-size: 2.8rem;
+		width: 260px;
+		bottom: 5px;
+		font-weight: bold;
+	}
+
+	li.text-04:before {
+		content: "";
+		background-image: url("../img/SVG/arrow.svg");
+		height: 7vw;
+		background-color: transparent;
+		width: 7vw;
+		background-size: cover;
+		left: -17%;
+		top: 0px;
+		max-width: 28px;
+		max-height: 28px;
+	}
+
+	li.text-04:nth-child(2) {
+		top: 2vh;
+	}
+
+	li.text-04:nth-child(3) {
+		top: 5vh;
+		left: auto;
+	}
+
 	/* ==================== Section 05 MOBILE ======================== */
 
 	#section-05 {
@@ -801,6 +937,7 @@ body, html {
 	#section-05 .section-wrapper {
 		width: 287px;
 		top: 38vh;
+		left: 50%;
 	}
 
 	/* ==================== Section 06 MOBILE ======================== */
@@ -810,10 +947,11 @@ body, html {
 	}
 
 	#section-06 .section-wrapper {
-		width: 178px;
+		width: 300px;
 		top: auto;
 		bottom: 18vh;
-		left: 42%;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	h1.text-06 {
@@ -919,5 +1057,36 @@ body, html {
 	h5.text-08 {
 		margin-bottom: 16px;
 		line-height: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	html, body {
+		font-size: 6px;
+	}
+
+	#section-05 .section-wrapper {
+		width: 240px;
+	}
+
+	#section-06 .section-wrapper {
+		width: 258px;
+	}
+
+	#section-04 .text-container-left {
+		width: 250px;
+	}
+
+	#section-03 .section-wrapper {
+		width: 214px;
+	}
+
+	#section-02 .text-container {
+		bottom: 12vh;
+		right: 11%;
+	}
+
+	#section-01 .section-wrapper {
+		bottom: 24px;
 	}
 }
