@@ -1556,6 +1556,11 @@ body, html {
 		width: 230px;
 	}
 
+	#section-03 {
+		background-size: 95%;
+		background-position: center right;
+	}
+
 	#section-05 .section-wrapper {
 		top: 34vh
 	}
