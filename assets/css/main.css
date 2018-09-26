@@ -1528,3 +1528,64 @@ body, html {
 		right: -42px;
 	}
 }
+
+@media screen and (max-width: 400px) {
+	h1.text-03 {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+	h4.text-03 {
+		font-size: 1.5rem;
+		line-height: 1.7rem;
+	}
+
+	li.text-04 {
+		width: 256px;
+	}
+
+	#section-05 .section-wrapper {
+		top: 34vh
+	}
+
+	h4.text-05 {
+		margin-top: 32px;
+	}
+
+	h1.text-07 {
+		top: 8vw;
+	}
+
+	h4.text-07 {
+		font-size: 2.2rem;
+	}
+
+	h5.text-07 {
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+	}
+
+	div.text-07.one {
+		top: 24vw;
+	}
+
+	div.text-07.two {
+		top: 42vw;
+	}
+
+	div.text-07.three {
+		top: 61vw;
+	}
+
+	div.text-07.four {
+		top: 80vw;
+	}
+
+	div.text-07.five {
+		top: 101vw;
+	}
+
+	div.text-07.six {
+		top: 124vw;
+	}
+
+}
