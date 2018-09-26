@@ -80,10 +80,13 @@ var myFullpage = new fullpage('#main', {
 	afterLoad: function(origin, destination, direction){
 	},
 	afterRender: function(){
-        setTimeout(() => {
-            $("#svg-loading").fadeOut();
-            $("#main").fadeIn();
-        }, 0);
+		$(function() {
+			setTimeout(() => {
+				$("#svg-loading").fadeOut();
+				$("#main").fadeIn();
+			}, 0);
+		});
+        
         
     },
 	afterResize: function(width, height){},
