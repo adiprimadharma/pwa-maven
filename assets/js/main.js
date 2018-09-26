@@ -84,7 +84,7 @@ var myFullpage = new fullpage('#main', {
 			setTimeout(() => {
 				$("#svg-loading").fadeOut();
 				$("#main").fadeIn();
-			}, 2000);
+			}, 3000);
 		});
         
     },
