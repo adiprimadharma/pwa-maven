@@ -1271,6 +1271,12 @@ body, html {
 
 	h5.text-08:nth-child(2) {
 		margin-top: 14px;
+		margin-bottom: 24px;
+	}
+
+	h5.text-08 {
+		font-size: 1.6rem;
+		line-height: 1rem;
 	}
 }
 
