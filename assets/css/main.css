@@ -517,6 +517,10 @@ h5.text-01 {
             transform: translateY(-33%);
 }
 
+#section-02 .section-wrapper {
+	height: 100vh;
+}
+
 #section-02 .text-container {
     /* position: absolute;
 	right: 20%;
@@ -690,8 +694,6 @@ li.text-04:nth-child(2) {
 li.text-04:nth-child(3) {
 	top: 10vh;
 	left: -110px;
-
-	margin-left: -64px;
 }
 
 li.text-04:before {
@@ -1763,13 +1765,15 @@ body, html {
 		justify-content: center;
 		position: static;
 	}
+
+	li.text-04:nth-child(3) {
+		margin-left: -64px;
+	}
+
 	ul.text-04 {
 		height: 100vh;
 		padding: 0;
 		margin: 0;
-	}
-	#section-02 .section-wrapper {
-		height: 100vh;
 	}
 
 	#section-03 .section-wrapper {
