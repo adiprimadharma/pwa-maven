@@ -518,9 +518,10 @@ h5.text-01 {
 }
 
 #section-02 .text-container {
-    position: absolute;
+    /* position: absolute;
 	right: 20%;
-    bottom: 56px;
+	bottom: 56px; */
+	transform: translate(90%, -50%);
 }
 
 h1.text-02 {
@@ -553,7 +554,7 @@ h4.text-02 {
 
 #section-03 .section-wrapper {
 	width: 370px;
-    -webkit-box-orient: vertical;
+    /* -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -565,7 +566,8 @@ h4.text-02 {
             align-items: flex-end;
     position: absolute;
     bottom: 140px;
-    left: 10%;
+	left: 10%; */
+	transform: translate(30%, 10%);
 }
 
 h1.text-03 {
@@ -649,12 +651,21 @@ h4.text-04 {
 }
 
 #section-04 .text-container-right {
-	position: absolute;
+	/* position: absolute;
     right: 34%;
     -webkit-transform: translate(100%, 5%);
         -ms-transform: translate(100%, 5%);
             transform: translate(100%, 5%);
-	top: 12.5vh;
+	top: 12.5vh; */
+
+	position: absolute;
+    right: 10%;
+}
+
+ul.text-04 {
+	height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
 li.text-04 {
@@ -672,6 +683,11 @@ li.text-04 {
 	margin-bottom: 56px;
 	position: relative;
 	width: 332px;
+
+	margin: 0;
+    height: 33.3vh;
+	justify-content: center;
+	position: static;
 }
 
 li.text-04:nth-child(2) {
@@ -681,6 +697,8 @@ li.text-04:nth-child(2) {
 li.text-04:nth-child(3) {
 	top: 10vh;
 	left: -110px;
+
+	margin-left: -64px;
 }
 
 li.text-04:before {
@@ -719,12 +737,18 @@ span.text-04 {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    position: absolute;
+    /* position: absolute;
 	-webkit-transform: translateX(-50%);
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 	left: 77%;
-    top: 200px;
+	top: 200px; */
+	
+	height: 100vh;
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 0;
 }
 
 h1.text-05.type-2 {
@@ -766,7 +790,8 @@ h4.text-05 {
     -webkit-align-items: flex-end;
         -ms-flex-align: end;
             align-items: flex-end;
-	top: 16px;
+	/* top: 16px; */
+	height: 100vh;
 }
 
 h1.text-06.type-2 {
@@ -813,7 +838,7 @@ h1.text-07 {
 	text-transform: uppercase;
 	letter-spacing: 0.4rem;
 	position: absolute;
-	top: 11vw;
+	top: 15vh;
     left: 10%;
     width: 125px;
     text-align: right;
@@ -940,6 +965,10 @@ h5.text-07 {
     position: absolute;
 }
 
+#section-08 .section-wrapper {
+	height: 100vh;
+}
+
 h1.text-08 {
 	color: #FFEC00;
     font-size: 4.4rem;
@@ -950,7 +979,7 @@ h1.text-08 {
     text-transform: uppercase;
     letter-spacing: 0.4rem;
     position: absolute;
-    bottom: 210px;
+    top: 10vh;
     left: 10%;
     width: 222px;
     text-align: right;
