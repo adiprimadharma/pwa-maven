@@ -521,7 +521,9 @@ h5.text-01 {
     /* position: absolute;
 	right: 20%;
 	bottom: 56px; */
-	transform: translate(90%, -50%);
+	position: absolute;
+    right: 20vw;
+    top: 10vh;
 }
 
 h1.text-02 {
@@ -568,6 +570,7 @@ h4.text-02 {
     bottom: 140px;
 	left: 10%; */
 	transform: translate(30%, 10%);
+	display: block;
 }
 
 h1.text-03 {
@@ -684,10 +687,7 @@ li.text-04 {
 	position: relative;
 	width: 332px;
 
-	margin: 0;
-    height: 33.3vh;
-	justify-content: center;
-	position: static;
+	
 }
 
 li.text-04:nth-child(2) {
@@ -1764,4 +1764,14 @@ body, html {
 		top: 124vw;
 	}
 
+}
+
+
+@media screen and (min-width: 1024px) {
+	li.text-04 {
+		margin: 0;
+		height: 33.3vh;
+		justify-content: center;
+		position: static;
+	}
 }
