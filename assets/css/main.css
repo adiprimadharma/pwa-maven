@@ -556,7 +556,7 @@ h4.text-02 {
 
 #section-03 .section-wrapper {
 	width: 370px;
-    /* -webkit-box-orient: vertical;
+     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -568,9 +568,7 @@ h4.text-02 {
             align-items: flex-end;
     position: absolute;
     bottom: 140px;
-	left: 10%; */
-	transform: translate(30%, 10%);
-	display: block;
+	left: 10%; 
 }
 
 h1.text-03 {
@@ -665,11 +663,6 @@ h4.text-04 {
     right: 10%;
 }
 
-ul.text-04 {
-	height: 100vh;
-    padding: 0;
-    margin: 0;
-}
 
 li.text-04 {
 	font-size: 3.4rem;
@@ -737,18 +730,14 @@ span.text-04 {
     -webkit-align-items: flex-start;
         -ms-flex-align: start;
             align-items: flex-start;
-    /* position: absolute;
+     position: absolute;
 	-webkit-transform: translateX(-50%);
 	    -ms-transform: translateX(-50%);
 	        transform: translateX(-50%);
 	left: 77%;
-	top: 200px; */
+	top: 200px; 
 	
-	height: 100vh;
-    display: flex;
-    position: absolute;
-    right: 10%;
-    top: 0;
+	
 }
 
 h1.text-05.type-2 {
@@ -1773,5 +1762,27 @@ body, html {
 		height: 33.3vh;
 		justify-content: center;
 		position: static;
+	}
+	ul.text-04 {
+		height: 100vh;
+		padding: 0;
+		margin: 0;
+	}
+	#section-02 .section-wrapper {
+		height: 100vh;
+	}
+
+	#section-03 .section-wrapper {
+		transform: translate(30%, 10%);
+		display: block;
+		position: static;
+	}
+
+	#section-05 .section-wrapper {
+		height: 100vh;
+		display: flex;
+		position: absolute;
+		right: 10%;
+		top: 0;
 	}
 }
